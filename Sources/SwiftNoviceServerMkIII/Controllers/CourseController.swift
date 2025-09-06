@@ -1,4 +1,4 @@
-//  File: File.swift
+//  File: CourseController.swift
 //  Project: SwiftNoviceServerMkIII
 //  Created by: Noah Pope on 9/6/25.
 
