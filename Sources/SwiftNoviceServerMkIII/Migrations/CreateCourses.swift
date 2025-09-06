@@ -22,6 +22,7 @@ struct CreateCourses: Migration
             .create()
     }
     
+    
     func revert(on database: any FluentKit.Database) -> NIOCore.EventLoopFuture<Void>
     {
         return database.schema("courses").delete()
