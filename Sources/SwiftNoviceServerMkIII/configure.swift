@@ -3,6 +3,7 @@ import Fluent
 import FluentPostgresDriver
 import Vapor
 
+// STEP 1: CREATE THE DATABASE > CREATE PROJECTS & COURSES TABLES > THEN CALLS ROUTES.SWIFT FILE 
 // configures your application
 public func configure(_ app: Application) async throws {
     // uncomment to serve files from /Public folder
@@ -17,6 +18,7 @@ public func configure(_ app: Application) async throws {
         tls: .prefer(try .init(configuration: .clientDefault)))
     ), as: .psql)
     
+    app.migrations.add(CreateCourseProjects())
     app.migrations.add(CreateCourses())
     try app.autoMigrate().wait()
 
