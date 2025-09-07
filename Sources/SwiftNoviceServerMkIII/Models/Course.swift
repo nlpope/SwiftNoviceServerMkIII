@@ -30,9 +30,14 @@ final class Course: Model, Content, @unchecked Sendable
     
     init() {}
     
-    init(id: UUID? = nil, name: String)
+    
+    init(id: UUID? = nil, name: String, instructor: String, bio: String, avatarUrl: String, isBookmarked: Bool)
     {
         self.id = id
         self.name = name
+        self.instructor = instructor
+        self.bio = bio
+        self.avatarUrl = avatarUrl
+        self.isBookmarked = isBookmarked
     }
 }

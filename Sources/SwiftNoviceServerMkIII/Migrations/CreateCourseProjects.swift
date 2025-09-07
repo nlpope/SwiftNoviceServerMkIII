@@ -10,7 +10,7 @@ struct CreateCourseProjects: Migration
     {
         return database.schema("courseProjects")
             .id()
-            .field("name", .string, .required)
+            .field("title", .string, .required)
             .field("subtitle", .string, .required)
             .field("skills", .string, .required)
             .field("link", .string, .required)
