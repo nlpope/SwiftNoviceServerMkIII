@@ -8,8 +8,8 @@ import Vapor
 // STEP 3: THIS CONTROLLER HAS THE ABILITY TO READ ALL THE DIFFERENT COURSES VIA THE '.../courses' ROUTE
 /**
  STEPS & ANALOGIES:
- 1. open docker desktop app then turn on docker (database) via terminal
- > terminal > go to server file > 'cmd + t' for new tab > type 'docker compose up db' (see docker.yml file) > be sure the desktop app is open or this will fail
+ 1. turn on docker (database) via terminal
+ > open desktop app > now open terminal > go to server file > 'cmd + t' for new tab > type 'docker compose up db' (see docker.yml file) > be sure the desktop app is open or this will fail 
  > azure data studio (API-agnostic db window) is a window for this - open it & make a new connection w info from 'configure' file
  >> create a new connection > type postgresSQL > servername localhost (see configure file) > usrname & password = vapor_username & vapor_password (see configure file) > database = vapor_database (see configure file)
  
@@ -33,12 +33,14 @@ struct CourseController: RouteCollection
     }
     
     
+    // 'Get' request for /courses route
     func index(req: Request) throws -> EventLoopFuture<[Course]>
     {
         return Course.query(on: req.db).all()
     }
     
     
+    // 'Post' request for /courses route
     func create(req: Request) throws -> EventLoopFuture<HTTPStatus>
     {
         let course = try req.content.decode(Course.self)
