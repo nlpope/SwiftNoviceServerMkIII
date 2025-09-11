@@ -14,7 +14,7 @@ struct CreateCourses: Migration
         // this is a table called 'courses' with id, name, instructor, etc. props
         return database.schema("courses")
             .id()
-            .field("index", .int, .required)
+//            .field("itemIndex", .int, .required)
             .field("name", .string, .required)
             .field("instructor", .string, .required)
             .field("bio", .string, .required)
