@@ -12,8 +12,8 @@ final class Course: Model, Content, @unchecked Sendable
     @ID(key: .id)
     var id: UUID?
     
-//    @Field(key: "itemIndex")
-//    var itemIndex: Int
+    @Field(key: "item_index")
+    var itemIndex: Int
     
     @Field(key: "name")
     var name: String
@@ -24,20 +24,20 @@ final class Course: Model, Content, @unchecked Sendable
     @Field(key: "bio")
     var bio: String
     
-    @Field(key: "avatarUrl")
+    @Field(key: "avatar_url")
     var avatarUrl: String?
     
-    @Field(key: "isBookmarked")
+    @Field(key: "is_bookmarked")
     var isBookmarked: Bool
     
     
     init() {}
     
     
-    init(id: UUID? = nil, name: String, instructor: String, bio: String, avatarUrl: String, isBookmarked: Bool)
+    init(id: UUID? = nil, itemIndex: Int, name: String, instructor: String, bio: String, avatarUrl: String, isBookmarked: Bool)
     {
         self.id = id
-//        self.itemIndex = itemIndex
+        self.itemIndex = itemIndex
         self.name = name
         self.instructor = instructor
         self.bio = bio

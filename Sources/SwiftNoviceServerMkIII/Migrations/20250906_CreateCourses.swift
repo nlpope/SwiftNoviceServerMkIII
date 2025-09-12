@@ -15,7 +15,7 @@ struct CreateCourses: Migration
         return database
             .schema("courses")
             .id()
-//            .field("itemIndex", .int, .required)
+            .field("item_index", .int, .required)
             .field("name", .string, .required)
             .field("instructor", .string, .required)
             .field("bio", .string, .required)
