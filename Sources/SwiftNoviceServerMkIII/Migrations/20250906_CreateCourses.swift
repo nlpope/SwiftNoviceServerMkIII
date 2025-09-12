@@ -12,7 +12,8 @@ struct CreateCourses: Migration
     func prepare(on database: any FluentKit.Database) -> NIOCore.EventLoopFuture<Void>
     {
         // this is a table called 'courses' with id, name, instructor, etc. props
-        return database.schema("courses")
+        return database
+            .schema("courses")
             .id()
 //            .field("itemIndex", .int, .required)
             .field("name", .string, .required)
