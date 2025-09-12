@@ -19,8 +19,8 @@ struct CreateCourses: Migration
             .field("name", .string, .required)
             .field("instructor", .string, .required)
             .field("bio", .string, .required)
-            .field("avatarUrl", .string, .required)
-            .field("isBookmarked", .bool, .required)
+            .field("avatar_url", .string, .required)
+            .field("is_bookmarked", .bool, .required)
             .create()
     }
     
