@@ -1,4 +1,4 @@
-//  File: 20250906_CreateCourses.swift
+//  File: 20250915_CreateCoursez.swift
 //  Project: SwiftNoviceServerMkIII
 //  Created by: Noah Pope on 9/6/25.
 
@@ -7,7 +7,7 @@
 import Fluent
 
 // Migration is like Git, it just keeps track of table / database changes
-struct CreateCourses: Migration
+struct CreateCoursez: Migration
 {
     func prepare(on database: any FluentKit.Database) -> NIOCore.EventLoopFuture<Void>
     {
