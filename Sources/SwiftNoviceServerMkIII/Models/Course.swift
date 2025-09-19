@@ -8,7 +8,7 @@ import Vapor
 // Content type auto-conforms to Codable protocol
 final class Course: Model, Content, @unchecked Sendable
 {
-    static let schema = "courses"
+    static let schema = "getCourses"
     
     @ID(key: .id)
     var id: UUID?

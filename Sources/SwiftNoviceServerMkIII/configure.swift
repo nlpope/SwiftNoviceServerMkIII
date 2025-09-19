@@ -19,9 +19,8 @@ public func configure(_ app: Application) async throws {
     ), as: .psql)
     
 //    app.migrations.add(CreateCourseProjects())
-//    app.migrations.add(CreateCoursez())
-    app.migrations.add(CreateCourses())
-    try app.autoMigrate().wait()
+//    app.migrations.add(CreateCourses())
+//    try app.autoMigrate().wait()
 
     // register routes
     try routes(app)
