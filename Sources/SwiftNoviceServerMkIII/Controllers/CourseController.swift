@@ -43,6 +43,7 @@ struct CourseController: RouteCollection
     // 'Post' request for /courses route
     func create(req: Request) throws -> EventLoopFuture<HTTPStatus>
     {
+       
         let course = try req.content.decode(Course.self)
         return course.save(on: req.db).transform(to: .ok)
     }

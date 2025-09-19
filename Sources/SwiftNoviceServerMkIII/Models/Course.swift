@@ -5,6 +5,7 @@
 import Fluent
 import Vapor
 
+// Content type auto-conforms to Codable protocol
 final class Course: Model, Content, @unchecked Sendable
 {
     static let schema = "courses"

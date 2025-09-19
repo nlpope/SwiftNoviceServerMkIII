@@ -13,7 +13,7 @@ struct CreateCoursez: Migration
     {
         // this is a table called 'courses' with id, name, instructor, etc. props
         return database
-            .schema("courses")
+            .schema("coursez")
             .id()
             .field("item_index", .int, .required)
             .field("name", .string, .required)
@@ -27,6 +27,6 @@ struct CreateCoursez: Migration
     
     func revert(on database: any FluentKit.Database) -> NIOCore.EventLoopFuture<Void>
     {
-        return database.schema("courses").delete()
+        return database.schema("coursez").delete()
     }
 }
