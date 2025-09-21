@@ -26,23 +26,23 @@ final class Course: Model, Content, @unchecked Sendable
     var bio: String
     
     @Field(key: "avatar_url")
-    var avatarUrl: String?
+    var avatar_url: String?
     
     @Field(key: "is_bookmarked")
-    var isBookmarked: Bool
+    var is_Bookmarked: Bool
     
     
     init() {}
     
     
-    init(id: UUID? = nil, itemIndex: Int, name: String, instructor: String, bio: String, avatarUrl: String, isBookmarked: Bool)
+    init(itemIndex: Int, name: String, instructor: String, bio: String, avatarUrl: String, isBookmarked: Bool)
     {
-        self.id = id
+        self.id = UUID()
         self.itemIndex = itemIndex
         self.name = name
         self.instructor = instructor
         self.bio = bio
-        self.avatarUrl = avatarUrl
-        self.isBookmarked = isBookmarked
+        self.avatar_url = avatarUrl
+        self.is_Bookmarked = isBookmarked
     }
 }

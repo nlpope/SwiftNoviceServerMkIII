@@ -20,10 +20,11 @@ func routes(_ app: Application) throws
         return "Hello, \(name.capitalized)!"
     }
     
-    app.get("getCourses") { req async -> [Course] in
+    app.get("getCourses") { req async throws -> [Course] in
         var courses = [Course]()
+        let courseCreator = CourseCreator()
         
-        courses += createCourse(named: "HWS", taughtBy: "Paul Hudson", atIndex: 1, url: "https://www.hackingwithswift.com/", imageUrl: "", bio: BioKeys.paulHudson)
+        courses = courseCreator.createCourses()
         
         return courses
     }
@@ -34,7 +35,3 @@ func routes(_ app: Application) throws
 }
 
 
-func createCourse(named name: String, taughtBy instructor: String, atIndex index: Int, url: String, imageUrl: String, bio: String) -> Course
-{
-    return Course(id: UUID(), itemIndex: index, name: name, instructor: instructor, bio: bio, avatarUrl: imageUrl, isBookmarked: false)
-}
