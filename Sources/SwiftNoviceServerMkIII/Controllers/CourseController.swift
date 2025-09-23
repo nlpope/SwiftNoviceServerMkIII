@@ -28,6 +28,7 @@ struct CourseController: RouteCollection
     func boot(routes: any Vapor.RoutesBuilder) throws
     {
         let courses = routes.grouped("courses")
+//        let courses = routes.grouped("getCourses")
         courses.get(use: index)
         courses.post(use: create)
     }
