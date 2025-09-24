@@ -18,7 +18,7 @@ public func configure(_ app: Application) async throws {
         tls: .prefer(try .init(configuration: .clientDefault)))
     ), as: .psql)
     
-    app.http.server.configuration.hostname = "0.0.0.0"
+//    app.http.server.configuration.hostname = "0.0.0.0"
     
 //    app.migrations.add(CreateCourseProjects())
 //    app.migrations.add(CreateCourses())
