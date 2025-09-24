@@ -16,6 +16,9 @@ class CourseCreator
     {
         var courses = [Course]()
         let paul = createCourse(named: "HWS", taughtBy: "Paul Hudson", atIndex: 1, url: CourseUrls.paulHudson, avatarUrl: AvatarUrls.paulHudson, bio: BioKeys.paulHudson)
+        
+        let git = createCourse(named: "Git beginner", taughtBy: "Will Smythe", atIndex: 2, url: CourseUrls.paulHudson, avatarUrl: AvatarUrls.paulHudson, bio: BioKeys.paulHudson)
+        
         courses += [paul]
         return courses
     }
