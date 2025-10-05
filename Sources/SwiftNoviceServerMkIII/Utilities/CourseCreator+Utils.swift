@@ -6,6 +6,10 @@ import Foundation
 
 class CourseCreator
 {
+    // NEW API CHAIN CODE - NO NEW IMPORTS NEEDED
+    //... copy from snmkII's network fetcher n just give it scripts url
+    // NEW API CHAIN CODE - NO NEW IMPORTS NEEDED
+    
     func createCourse(named name: String, taughtBy instructor: String, atIndex index: Int, url: String, avatarUrl: String, bio: String) -> Course
     {
         return Course(itemIndex: index, name: name, instructor: instructor, bio: bio, avatarUrl: avatarUrl, isBookmarked: false)
@@ -37,5 +41,4 @@ class CourseCreator
         
         return courses
     }
-
 }

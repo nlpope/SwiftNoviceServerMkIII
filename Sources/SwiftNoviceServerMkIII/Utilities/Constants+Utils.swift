@@ -4,18 +4,6 @@
 
 import Foundation
 
-enum CourseUrls
-{
-    static let git = "https://learngitbranching.js.org/"
-    static let playgrounds1 = "https://app.alludolearning.com/m/activities/147676-swift-playgrounds-getting-started-with-learn-to-code-1-commands"
-    static let playgrounds2 = "https://app.alludolearning.com/m/activities/147676-swift-playgrounds-getting-started-with-learn-to-code-1-commands"
-    static let seanAllenBeginner = "https://www.youtube.com/watch?v=CwA1VWP0Ldw&t=9859s&ab_channel=SeanAllen"
-    static let seanAllenTakeHome = "https://www.youtube.com/watch?v=JzngncpZLuw&ab_channel=SeanAllen"
-    static let stanford = "https://www.youtube.com/watch?v=CRxHhx_pubY&list=PL3d_SFOiG7_8ofjyKzX6Nl1wZehbdiZC_&index=3&ab_channel=CS193P"
-    static let lynch = "https://www.youtube.com/watch?v=R2ptqaBMan4&list=PLBn01m5Vbs4CUCcA3fqvsRtx153akAJU1&index=1&ab_channel=StewartLynch"
-    static let paulHudson = "https://www.hackingwithswift.com/"
-}
-
 enum AvatarUrls
 {
     static let git = "https://www.javiertordable.com/images/learn-git3.png"
@@ -39,3 +27,16 @@ enum BioKeys
     static let lynch = "This is the first of a 3 part series on Taming the beast known as Xcode. The series will be broken into 3 distinct sections.  In this first video, I will go over what has confused me a lot;  window and document tabs along with editors and how these all fit together.  I'll provide you with some tips for keeping your hands on the keyboard and still be able to navigate your way around."
     static let paulHudson = "The Hacking with Swift tutorial series is designed to make it easy for beginners to get started coding for iPad and iPhone using the Swift programming language. Hacking with Swift’s teaching style is extremely hands-on, which means nearly everything you learn from me will have a direct, practical application to something we're working on. That way, your brain can see exactly why a certain technique is helpful and you can start using it straight away."
 }
+
+enum CourseUrls
+{
+    static let git = "https://learngitbranching.js.org/"
+    static let playgrounds1 = "https://app.alludolearning.com/m/activities/147676-swift-playgrounds-getting-started-with-learn-to-code-1-commands"
+    static let playgrounds2 = "https://app.alludolearning.com/m/activities/147676-swift-playgrounds-getting-started-with-learn-to-code-1-commands"
+    static let seanAllenBeginner = "https://www.youtube.com/watch?v=CwA1VWP0Ldw&t=9859s&ab_channel=SeanAllen"
+    static let seanAllenTakeHome = "https://www.youtube.com/watch?v=JzngncpZLuw&ab_channel=SeanAllen"
+    static let stanford = "https://www.youtube.com/watch?v=CRxHhx_pubY&list=PL3d_SFOiG7_8ofjyKzX6Nl1wZehbdiZC_&index=3&ab_channel=CS193P"
+    static let lynch = "https://www.youtube.com/watch?v=R2ptqaBMan4&list=PLBn01m5Vbs4CUCcA3fqvsRtx153akAJU1&index=1&ab_channel=StewartLynch"
+    static let paulHudson = "https://www.hackingwithswift.com/"
+}
+
