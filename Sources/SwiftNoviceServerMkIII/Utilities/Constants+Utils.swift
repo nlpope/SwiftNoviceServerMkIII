@@ -40,3 +40,7 @@ enum CourseUrls
     static let paulHudson = "https://www.hackingwithswift.com/"
 }
 
+enum CourseProjectsUrls
+{
+    static let git = "https://script.google.com/macros/s/AKfycbymK_lU6LlW-caQJjpGUcfmbDPbMgXaCBLq4GhXp-Yvn8hRFhKc3QVbZFeaS-FfmW-5-Q/exec"
+}
