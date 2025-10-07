@@ -31,14 +31,17 @@ final class Course: Model, Content, @unchecked Sendable
     @Field(key: "is_bookmarked")
     var is_Bookmarked: Bool
     
-    @Field(key: "course_projects_url")
-    var course_projects_url: String
+    @Field(key: "course_url")
+    var course_url: String
+    
+    @Field(key: "course_projects_api_url")
+    var course_projects_api_url: String
     
     
     init() {}
     
     
-    init(itemIndex: Int, name: String, instructor: String, bio: String, avatarUrl: String, isBookmarked: Bool, courseProjectsUrl: String)
+    init(itemIndex: Int, name: String, instructor: String, bio: String, avatarUrl: String, isBookmarked: Bool, courseUrl: String, courseProjectsApiUrl: String)
     {
         self.id = UUID()
         self.itemIndex = itemIndex
@@ -47,6 +50,7 @@ final class Course: Model, Content, @unchecked Sendable
         self.bio = bio
         self.avatar_url = avatarUrl
         self.is_Bookmarked = isBookmarked
-        self.course_projects_url = courseProjectsUrl
+        self.course_url = courseUrl
+        self.course_projects_api_url = courseProjectsApiUrl
     }
 }
