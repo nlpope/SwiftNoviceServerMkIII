@@ -12,7 +12,7 @@ class CourseCreator
     #warning("left off here 10.07.25 - just order the rest of the createCourse to follow order in main app's Course model - func below is done just fix the return value & remaining error spots")
     func createCourse(atIndex index: Int, named name: String, taughtBy instructor: String, bio: String, avatarUrl: String, courseUrl: String, courseProjectsApiUrl: String, isBookmarked: Bool, isCompleted: Bool) -> Course
     {
-        return Course(name: name, itemIndex: index, instructor: instructor, bio: bio, avatarUrl: avatarUrl, isBookmarked: false, courseUrl: courseUrl, courseProjectsApiUrl: courseProjectsApiUrl, isCompleted: false)
+        return Course(itemIndex: index, name: name, instructor: instructor, bio: bio, avatarUrl: avatarUrl, courseUrl: courseUrl, courseProjectsApiUrl: courseProjectsApiUrl, isBookmarked: isBookmarked, isCompleted: isCompleted)
     }
     
     
@@ -20,8 +20,8 @@ class CourseCreator
     {
         var courses = [Course]()
         
+        let gitr = createCourse(atIndex: 0, named: "Git Beginner", taughtBy: "Will Smythe", bio: BioKeys.git, avatarUrl: AvatarUrls.git, courseUrl: CourseUrls.git, courseProjectsApiUrl: CourseProjectsAPIUrls.git, isBookmarked: false, isCompleted: false)
         
-        let git = createCourse(named: "Git beginner", taughtBy: "Will Smythe", atIndex: 1, url: CourseUrls.git, avatarUrl: AvatarUrls.git, bio: BioKeys.git, courseUrl: <#String#>, courseProjectsApiUrl: CourseProjectsAPIUrls.git)
         
         let playgrounds1 = createCourse(named: "Swift Playgrounds 1", taughtBy: "Self guided", atIndex: 2, url: CourseUrls.playgrounds1, avatarUrl: AvatarUrls.playgrounds1, bio: BioKeys.playgrounds1, courseProjectsApiUrl: "")
         
