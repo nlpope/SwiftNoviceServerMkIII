@@ -22,9 +22,9 @@ class CourseCreator
         
         let gitr = createCourse(atIndex: 0, named: "Git Beginner", taughtBy: "Will Smythe", bio: BioKeys.git, avatarUrl: AvatarUrls.git, courseUrl: CourseUrls.git, courseProjectsApiUrl: CourseProjectsAPIUrls.git, isBookmarked: false, isCompleted: false)
         
+        let playgrounds1 = createCourse(atIndex: 1, named: "Swift Playgrounds 1", taughtBy: "Self guided", bio: BioKeys.playgrounds1, avatarUrl: AvatarUrls.playgrounds1, courseUrl: CourseUrls.playgrounds1, courseProjectsApiUrl: CourseProjectsAPIUrls.playgrounds1, isBookmarked: false, isCompleted: false)
         
-        let playgrounds1 = createCourse(named: "Swift Playgrounds 1", taughtBy: "Self guided", atIndex: 2, url: CourseUrls.playgrounds1, avatarUrl: AvatarUrls.playgrounds1, bio: BioKeys.playgrounds1, courseProjectsApiUrl: "")
-        
+        let playgrounds2 = createCourse(atIndex: 2, named: "Swift Playgrounds 2", taughtBy: "Self guided", bio: BioKeys.playgrounds2, avatarUrl: AvatarUrls.playgrounds2, courseUrl: CourseUrls.playgrounds2, courseProjectsApiUrl: CourseProjectsAPIUrls.playgrounds2, isBookmarked: <#T##Bool#>, isCompleted: <#T##Bool#>)
         let playgrounds2 = createCourse(named: "Swift Playgrounds 2", taughtBy: "Self guided", atIndex: 3, url: CourseUrls.playgrounds2, avatarUrl: AvatarUrls.playgrounds2, bio: BioKeys.playgrounds2, courseProjectsApiUrl: "")
         
         let seanAllenBeginner = createCourse(named: "Swift Beginner Course", taughtBy: "Sean Allen", atIndex: 4, url: CourseUrls.seanAllenBeginner, avatarUrl: AvatarUrls.seanAllenBeginner, bio: BioKeys.seanAllenBeginner, courseProjectsApiUrl: "")

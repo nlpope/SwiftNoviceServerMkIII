@@ -44,4 +44,10 @@ enum CourseProjectsAPIUrls
 {
     static let git = "https://script.google.com/macros/s/AKfycbymK_lU6LlW-caQJjpGUcfmbDPbMgXaCBLq4GhXp-Yvn8hRFhKc3QVbZFeaS-FfmW-5-Q/exec"
     static let playgrounds1 = ""
+    static let playgrounds2 = ""
+    static let seanAllenBeginner = ""
+    static let seanAllenTakeHome = ""
+    static let stanford = ""
+    static let lynch = ""
+    static let paulHudson = ""
 }
