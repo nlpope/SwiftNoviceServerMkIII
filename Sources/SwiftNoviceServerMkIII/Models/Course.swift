@@ -14,7 +14,7 @@ final class Course: Model, Content, @unchecked Sendable
     var id: UUID?
     
     @Field(key: "item_index")
-    var itemIndex: Int
+    var item_index: Int
     
     @Field(key: "name")
     var name: String
@@ -28,29 +28,34 @@ final class Course: Model, Content, @unchecked Sendable
     @Field(key: "avatar_url")
     var avatar_url: String?
     
-    @Field(key: "is_bookmarked")
-    var is_Bookmarked: Bool
-    
     @Field(key: "course_url")
     var course_url: String
     
     @Field(key: "course_projects_api_url")
     var course_projects_api_url: String
     
+    @Field(key: "is_bookmarked")
+    var is_bookmarked: Bool
+    
+    @Field(key: "is_completed")
+    var is_completed: Bool
+    
     
     init() {}
     
     
-    init(itemIndex: Int, name: String, instructor: String, bio: String, avatarUrl: String, isBookmarked: Bool, courseUrl: String, courseProjectsApiUrl: String)
+    init(itemIndex: Int, name: String, instructor: String, bio: String, avatarUrl: String, courseUrl: String, courseProjectsApiUrl: String, isBookmarked: Bool, isCompleted: Bool)
     {
         self.id = UUID()
-        self.itemIndex = itemIndex
+        self.item_index = itemIndex
         self.name = name
         self.instructor = instructor
         self.bio = bio
         self.avatar_url = avatarUrl
-        self.is_Bookmarked = isBookmarked
+        self.is_bookmarked = isBookmarked
+        // course url only here to be carried over to 'go' btn in next VC
         self.course_url = courseUrl
         self.course_projects_api_url = courseProjectsApiUrl
+        self.is_completed = isCompleted
     }
 }

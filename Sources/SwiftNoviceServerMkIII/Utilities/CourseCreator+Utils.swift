@@ -9,10 +9,10 @@ class CourseCreator
     // NEW API CHAIN CODE - NO NEW IMPORTS NEEDED
     //... copy from snmkII's network fetcher n just give it scripts url
     // NEW API CHAIN CODE - NO NEW IMPORTS NEEDED
-    
-    func createCourse(named name: String, taughtBy instructor: String, atIndex index: Int, url: String, avatarUrl: String, bio: String, courseProjectsApiUrl: String) -> Course
+    #warning("left off here 10.07.25 - just order the rest of the createCourse to follow order in main app's Course model - func below is done just fix the return value & remaining error spots")
+    func createCourse(atIndex index: Int, named name: String, taughtBy instructor: String, bio: String, avatarUrl: String, courseUrl: String, courseProjectsApiUrl: String, isBookmarked: Bool, isCompleted: Bool) -> Course
     {
-        return Course(itemIndex: index, name: name, instructor: instructor, bio: bio, avatarUrl: avatarUrl, isBookmarked: false, courseProjectsApiUrl: courseProjectsApiUrl)
+        return Course(name: name, itemIndex: index, instructor: instructor, bio: bio, avatarUrl: avatarUrl, isBookmarked: false, courseUrl: courseUrl, courseProjectsApiUrl: courseProjectsApiUrl, isCompleted: false)
     }
     
     
@@ -21,7 +21,7 @@ class CourseCreator
         var courses = [Course]()
         
         
-        let git = createCourse(named: "Git beginner", taughtBy: "Will Smythe", atIndex: 1, url: CourseUrls.git, avatarUrl: AvatarUrls.git, bio: BioKeys.git, courseProjectsApiUrl: CourseProjectsAPIUrls.git)
+        let git = createCourse(named: "Git beginner", taughtBy: "Will Smythe", atIndex: 1, url: CourseUrls.git, avatarUrl: AvatarUrls.git, bio: BioKeys.git, courseUrl: <#String#>, courseProjectsApiUrl: CourseProjectsAPIUrls.git)
         
         let playgrounds1 = createCourse(named: "Swift Playgrounds 1", taughtBy: "Self guided", atIndex: 2, url: CourseUrls.playgrounds1, avatarUrl: AvatarUrls.playgrounds1, bio: BioKeys.playgrounds1, courseProjectsApiUrl: "")
         
