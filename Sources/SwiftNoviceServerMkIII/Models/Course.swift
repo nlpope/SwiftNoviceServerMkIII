@@ -7,7 +7,6 @@ import Vapor
 
 // Content type auto-conforms to Codable protocol
 // Also, removing CourseProject model for it coming from the scripts api & app directly
-// testing
 final class Course: Model, Content, @unchecked Sendable
 {
     static let schema = "getCourses"
