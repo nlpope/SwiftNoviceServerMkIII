@@ -9,7 +9,9 @@ To build the project using the Swift Package Manager, run the following command 
 swift build
 ```
 
-To run the project and start the server from XCode, select 'My Mac' as the target device then click cmd + r. Alternatively, use the following command:
+To run the project and start the server from XCode, select 'My Mac' as the target device then click cmd + r. When a Vapor server is successfully running, the console typically displays a message like: "Server starting on http://127.0.0.1:8080"
+
+Alternatively, use the following command:
 ```bash
 swift run
 ```
